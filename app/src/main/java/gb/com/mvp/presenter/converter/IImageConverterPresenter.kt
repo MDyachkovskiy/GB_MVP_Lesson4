@@ -1,5 +1,11 @@
 package gb.com.mvp.presenter.converter
 
-interface IImageConverterPresenter {
+import android.content.Intent
+import android.graphics.Bitmap
 
+interface IImageConverterPresenter {
+    fun convertToPng(bitmap: Bitmap)
+    fun saveImage(bitmap: Bitmap)
+    fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
+    fun openGallery()
 }

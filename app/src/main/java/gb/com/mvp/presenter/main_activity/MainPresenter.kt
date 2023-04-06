@@ -1,4 +1,4 @@
-package gb.com.mvp.model.presenter
+package gb.com.mvp.presenter.main_activity
 
 import com.github.terrakok.cicerone.Router
 import gb.com.mvp.view.IMainView

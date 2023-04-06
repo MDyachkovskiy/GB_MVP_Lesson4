@@ -5,7 +5,7 @@ import com.github.terrakok.cicerone.androidx.AppNavigator
 import gb.com.App
 import gb.com.R
 import gb.com.databinding.ActivityMainBinding
-import gb.com.mvp.model.presenter.MainPresenter
+import gb.com.mvp.presenter.main_activity.MainPresenter
 import gb.com.mvp.view.IMainView
 import gb.com.navigation.Screens
 import moxy.MvpAppCompatActivity
