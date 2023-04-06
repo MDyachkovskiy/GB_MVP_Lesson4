@@ -40,6 +40,7 @@ class ImageModel(
     fun convertToPng(bitmap: Bitmap): Observable<Bitmap> {
         return Observable.create { emitter ->
             try {
+                Thread.sleep(5000)
                 val outputStream = ByteArrayOutputStream()
                 bitmap.compress(Bitmap.CompressFormat.PNG, 100, outputStream)
                 val byteArray = outputStream.toByteArray()
@@ -48,8 +49,12 @@ class ImageModel(
                 emitter.onComplete()
                 outputStream.flush()
                 outputStream.close()
+
             } catch (error: IOException) {
                 emitter.onError(error)
+
+            } catch (error: InterruptedException) {
+                error.printStackTrace()
             }
         }
     }

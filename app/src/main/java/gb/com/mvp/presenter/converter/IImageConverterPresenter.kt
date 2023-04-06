@@ -8,4 +8,6 @@ interface IImageConverterPresenter {
     fun saveImage(bitmap: Bitmap)
     fun handleActivityResult(requestCode: Int, resultCode: Int, data: Intent?)
     fun openGallery()
+    fun cancelConversion()
+    fun onConvertClicked(bitmap: Bitmap)
 }

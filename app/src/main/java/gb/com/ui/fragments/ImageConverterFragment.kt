@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import gb.com.databinding.FragmentImageConverterBinding
 import gb.com.mvp.model.ImageModel
 import gb.com.mvp.presenter.converter.IImageConverterPresenter
@@ -27,6 +28,8 @@ class ImageConverterFragment: MvpAppCompatFragment(), IImageConverterView {
     private val presenter: IImageConverterPresenter by moxyPresenter {
         ImageConverterPresenter(this, ImageModel(context))
     }
+    
+    private var conversionDialog: AlertDialog? = null
 
     companion object {
         fun newInstance() = ImageConverterFragment()
@@ -50,6 +53,23 @@ class ImageConverterFragment: MvpAppCompatFragment(), IImageConverterView {
         binding.buttonConvert.setOnClickListener {
             convertImage()
         }
+    }
+
+    override fun showConversionDialog () {
+        conversionDialog = context?.let {
+            AlertDialog.Builder(it)
+                .setMessage("Converting in process")
+                .setCancelable(false)
+                .setNegativeButton("Cancel"){_, _ ->
+                    presenter.cancelConversion()
+                }
+                .show()
+        }
+    }
+    
+    override fun dismissConversionDialog() {
+        conversionDialog?.dismiss()
+        conversionDialog = null
     }
 
     override fun onDestroyView() {
@@ -89,7 +109,7 @@ class ImageConverterFragment: MvpAppCompatFragment(), IImageConverterView {
             showMessage("No image to convert")
             return
         } else {
-            presenter.convertToPng(bitmap)
+            presenter.onConvertClicked(bitmap)
         }
     }
 }

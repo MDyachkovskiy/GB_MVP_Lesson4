@@ -11,4 +11,6 @@ interface IImageConverterView: MvpView {
     fun showMessage(message: String)
     fun showError(message: String)
     fun openGallery()
+    fun showConversionDialog()
+    fun dismissConversionDialog()
 }
