@@ -13,11 +13,29 @@
         android:scaleType="fitCenter"
         android:contentDescription="@string/convertible_image" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/convert_btn" />
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_download"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/download_btn"
+            android:layout_marginHorizontal="16dp"/>
+
+        <Button
+            android:id="@+id/button_convert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/convert_btn"
+            android:layout_marginHorizontal="16dp"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
