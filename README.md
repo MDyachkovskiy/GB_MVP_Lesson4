@@ -4,9 +4,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://gdurl.com/V0Ev" alt="project-screenshot" width="200" height="400/"> 
-<img src="https://gdurl.com/nhjq" alt="project-screenshot" width="200" height="400/"> 
-<img src="https://gdurl.com/0NZR" alt="project-screenshot" width="200" height="400/">
+<img src="https://gdurl.com/V0Ev" alt="project-screenshot" width="200" height="400/"> <img src="https://gdurl.com/nhjq" alt="project-screenshot" width="200" height="400/"> <img src="https://gdurl.com/0NZR" alt="project-screenshot" width="200" height="400/">
 <img src="https://gdurl.com/S656e" alt="project-screenshot" width="200" height="400/">
 
 <h2>💻 Built with</h2>
