@@ -4,7 +4,10 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://i.ibb.co.com/mBQSthb/Screenshot-2023-09-22-13-29-02-822-gb-com.jpg" alt="project-screenshot" width="200" height="400/"> <img src="https://i.ibb.co.com/TtJFjZn/Screenshot-2023-09-22-13-29-10-752-android.jpg" alt="project-screenshot" width="200" height="400/"> <img src="https://i.ibb.co.com/vVZRJSJ/Screenshot-2023-09-22-13-29-24-514-gb-com.jpg" alt="project-screenshot" width="200" height="400/">
+<img src="https://gdurl.com/V0Ev" alt="project-screenshot" width="200" height="400/"> 
+<img src="https://gdurl.com/nhjq" alt="project-screenshot" width="200" height="400/"> 
+<img src="https://gdurl.com/0NZR" alt="project-screenshot" width="200" height="400/">
+<img src="https://gdurl.com/S656e" alt="project-screenshot" width="200" height="400/">
 
 <h2>💻 Built with</h2>
 
